@@ -1,0 +1,6 @@
+# Maxfiy tokenlar saqlanadigan .env fayli ochiqqa chiqmasligi uchun
+.env
+__pycache__/
+*.pyc
+venv/
+.venv/
