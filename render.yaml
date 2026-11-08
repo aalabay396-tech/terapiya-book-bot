@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: terapiya-kitob-boti
+    env: python
+    region: frankfurt
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 9249605244:AAGsAkKFCJSZZGLB_glTV8Sq5tjMP8iZHeQ
+      - key: ADMIN_ID
+        value: "5337661007"
+      - key: CARD_NUMBER
+        value: "4067 0700 0848 5596"
+      - key: CARD_HOLDER
+        value: "Ruziyev Javlonbek"
